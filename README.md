@@ -13,8 +13,18 @@
 - create signup in firebase
 - implement signin user API
 - Created redux store with userSlice
--  
+-  Implemented Signout Feature
+- Update Profile
+- Fetch Movie from TMDB database
+- We unsubscribed to the onAuthStateChanged callback
+- Add Hardcoded values to the constants file
+- Register TMDB API & create an app & get access token
+- Get Data from TMDB now playing movies list API
 
+
+# Bug_Fixes
+- Sign up user displayName and profile picture update
+- if the user is not logged in Redirect/browse to login page and vice versa
 
 
 # Features
