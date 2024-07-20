@@ -26,7 +26,7 @@ const Login = () => {
     const emailValue = email.current ? email.current.value : '';
     // validate the form data
     const message = checkvalidatedata(emailValue, passwordValue, fullnamevalue, issigninform);
-    //console.log(email.current.value, password.current.value,)
+    
     seterrormessage(message);
     if (message) return;
     // sign In/ Sign Up Logic
@@ -56,7 +56,7 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email.current.value, password.current.value)
           .then((userCredential) => { 
           const user = userCredential.user;
-          console.log(user);
+          
         })
         .catch((error) => {
           const errorCode = error.code;
