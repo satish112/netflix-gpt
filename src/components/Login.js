@@ -6,7 +6,7 @@ import { auth } from "../utils/firebase";
 
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice'
-import { USER_AVATAR } from '../utils/constants';
+import { BACKGROUNG_URL, USER_AVATAR } from '../utils/constants';
 
 const Login = () => {
 
@@ -77,12 +77,13 @@ const Login = () => {
         <Header />
         <div className="absolute">
             <img 
-                src="https://assets.nflxext.com/ffe/siteui/vlv3/8728e059-7686-4d2d-a67a-84872bd71025/7e30a1c8-d525-4106-8911-04b8461d6201/US-en-20240708-POP_SIGNUP_TWO_WEEKS-perspective_WEB_00121511-337d-4096-a35a-410ac453bf78_large.jpg"
+                className="h-screen object-cover md:w-screen"
+                src= {BACKGROUNG_URL}
                 alt = "background"
             />
          </div>
          <div>
-            <form onSubmit = {(e)=> e.preventDefault()} className="w-3/12 absolute p-12 bg-black right-0 left-0 mx-auto my-36 text-white rounded-lg bg-opacity-80" >
+            <form onSubmit = {(e)=> e.preventDefault()} className="w-full md:w-3/12 absolute p-12 bg-black right-0 left-0 mx-auto my-36 text-white rounded-lg bg-opacity-80" >
                 <h1 className="font-bold text-3xl py-4">{issigninform ? "Sign In":"Sign Up"}</h1>
                 {!issigninform &&<input ref={fullname} type='text' placeholder='Full Name' className='p-4 my-4 w-full bg-gray-700'/>}
                 <input ref={email}
