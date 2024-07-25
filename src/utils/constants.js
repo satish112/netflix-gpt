@@ -18,4 +18,4 @@ export const API_OPTIONS = {
 
   export const SUPORTED_LANGUAGES = [{identifier:"en", name:"English"},{identifier:"hindi", name:"Hindi"},{identifier:"telugu", name:"Telugu"}]
 
-  export const OPENAI_KEY = "sk-proj-NXZXAg9QWjkw5ZjJOUCsT3BlbkFJvk7gyor0NKiNwcJYohOj";
+  export const OPENAI_KEY = 'sk-None-fQjca2ztkLpJRdrVz0bvT3BlbkFJvlTwMcqp3diqhxTS2sZ0';
